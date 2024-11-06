@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: black;
+  }
+  
+  .box {
+    width: 400px;
+    padding: 20px;
+    color: white;
+    background-color: blue;
+    backdrop-filter: blur(3px);
+    margin: 150px auto;
+    border: 3px solid #04fb6b;
+    text-align: center;
+    border-radius: 6em;
+    box-shadow: 5px 5px 50px 50px rgba(255, 5, 5, 699) var(__glow_color_);
+    animation: animateBg 5s linear infinite;
+  }
+  h1 {
+    color: 15px 15px 50px 50px rgba(150, 200, 250, 750) var(__glow_color_);
+  }
+  
+  @keyframes animateBg {
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  .box input {
+    border: 0;
+    background: black;
+    display: black;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #0399fd;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-weight: 900;
+  }
+  .box input [type="text"]:focus, .box input[type=password]:focus{
+    width: 280px;
+    border-color:#04fb6b;
+  }
+        .forget{
+          margin: 35px 0;
+          font-size: 0.8;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+        }
+        .forget label{
+          display: flex;
+          align-items: center;
+        }
+        .forget label input {
+          margin-right: 3px;
+        }
+         a{
+          color: yellow;
+          text-decoration: underline;
+          font-weight: 600;
+        }
+        .forget:hover{
+          text-decoration: underline;
+        }
+  placeholder{
+    color: greenyellow;
+  }
+  .box input [type="submit"] {
+    border: none;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 100%;
+    border: 3px solid #04fb6b;
+    padding: 14pt 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 1s;
+    transition-delay: 0.5s;
+    cursor: pointer;
+  }
+  .box input [type="submit"]:hover {
+    background-color: #04fb6b;
+  }
+  .social {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  .social div {
+    background: red;
+    width: 60px;
+    border-radius: 3px;
+    padding: 10px 5px 5px 10px;
+    text-align: center;
+    gap: 10px;
+  }
+  .social div:hover {
+    background-color: yellow;
+    border-radius: 3px;
+  }
+  .social.fb {
+    margin-left: 20px;
+    text-align: center;
+  }
+  .social i {
+    margin: 0;
+  }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <form class="box" action="Hello.html" method="POST">
+    <h1>Login</h1>
+    <input type="text" name="username" placeholder="username" required>
+    <input type="password" name="enter password" placeholder="password" required>
+    <input type="submit" name="" value="Login">
+    <div class="forget">
+      <label>
+        <input type="radio">Remember Me </label>
+       <a href="#">
+         Forget Password
+      </a>
+    </div>
+    <div class=""="register" name="" id="">
+      <p>Don't have an account<a href="index1.html"> register</a></p>
+    </div>
+    <div class="social">
+      <div class="go">
+        <i class="fab fa-google"></i>
+        Google
+      </div>
+     <div class="fb">
+        <i class="fab fa-facebook"></i>
+        Facebook
+      </div>
+    </div>
+  </form>
+</body>
+</html>
